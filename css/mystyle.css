@@ -1,0 +1,78 @@
+html,
+body {
+    height: 100%;
+}
+/*html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background: #343838;
+}*/
+
+.bg-image {
+    /* The image used */
+    background-image: url("../images/p2.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-image2 {
+    /* The image used */
+    background-image: url("../images/p1.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.corner
+{
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    height: 50%;
+    padding: 20px;
+    text-align: right;
+}
+.above
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    height: 50%;
+    padding: 20px;
+    text-align: center;
+}
+#login-page {
+   width: 450px;
+}
+#signup-page {
+    width: 850px;
+ }
+
