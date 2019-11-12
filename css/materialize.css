@@ -8388,7 +8388,7 @@ input[type=range]::-ms-thumb {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 700px;
   -webkit-perspective: 500px;
           perspective: 500px;
   -webkit-transform-style: preserve-3d;
@@ -8398,7 +8398,7 @@ input[type=range]::-ms-thumb {
 }
 
 .carousel.carousel-slider {
-  top: 0;
+  top: -80px;
   left: 0;
 }
 
@@ -8415,8 +8415,8 @@ input[type=range]::-ms-thumb {
 }
 
 .carousel.carousel-slider .carousel-item {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   min-height: 400px;
   position: absolute;
   top: 0;

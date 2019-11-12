@@ -1,5 +1,6 @@
 (function($){
   $(function(){
+    $('.carousel').carousel();
     $('.datepicker').datepicker();
     $('.sidenav').sidenav();
     $('.parallax').parallax();
