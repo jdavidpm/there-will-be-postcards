@@ -36,38 +36,41 @@
                     <div class="row">
                         <div class="input-field col s6 josefin">
                             <input class="validate" id="firstName" type="text">
-                            <label for="firstName" data-error="wrong" data-success="right">FIRST NAME</label>
+                            <label for="firstName" data-error="wrong" data-success="right"><i class="fas fa-address-card left"></i>FIRST NAME</label>
                         </div>
                         <div class="input-field col s6 josefin">
                             <input class="validate" id="email" type="email">
-                            <label for="email" data-error="wrong" data-success="right">SECOND NAME</label>
+                            <label for="email" data-error="wrong" data-success="right"><i class="far fa-address-card left"></i>SECOND NAME</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 josefin">
                             <input class="validate" id="secondName" type="text">
-                            <label for="secondName" data-error="wrong" data-success="right"><i class="material-icons left">mail_outline</i>EMAIL</label>
+                            <label for="secondName" data-error="wrong" data-success="right"><i class="far fa-envelope left"></i>EMAIL</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 josefin">
                             <input id="password" type="password">
-                            <label for="password"><i class="material-icons left">lock_outline</i>PASSWORD</label>
+                            <label for="password"><i class="fas fa-key left"></i>PASSWORD</label>
                         </div>
                     </div>
                     <div class="row left-align valign-wrapper">
                         <div class="input-field col s2 josefin greyish-text"></div>
                         <div class="input-field col s4 josefin greyish-text">
-                            <h6 class="grey-text">GENDER</h6>
-                            <p><label><input class="with-gap bluec-text" name="group1" type="radio" /><span>Male</span></label></p>
-                            <p><label><input class="with-gap" name="group1" type="radio" /><span>Female</span></label></p>
-                            <p><label><input class="with-gap" name="group1" type="radio" /><span>Other</span></label></p>
+                            <h6 class="grey-text"><i class="fas fa-venus-mars left"></i>GENDER</h6>
+                            <select>
+                                <option value="" disabled selected>Choose gender</option>
+                                <option value="1">Female</option>
+                                <option value="2">Male</option>
+                                <option value="3">Other</option>
+                            </select>   
                         </div>
-                        <div class="input-field col s3 josefin greyish-text">
-                            <h6 class="grey-text">BIRTHDATE</h6>
+                        <div class="input-field col s4 josefin greyish-text">
+                            <h6 class="grey-text"><i class="fas fa-birthday-cake left"></i>BIRTHDATE</h6>
                             <input type="text" class="datepicker">
                         </div>
-                        <div class="input-field col s3 greyish-text"></div>
+                        <div class="input-field col s2 greyish-text"></div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
