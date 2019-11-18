@@ -11,19 +11,27 @@
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Cinzel|Josefin+Sans|Liu+Jian+Mao+Cao|Permanent+Marker|Righteous|Staatliches|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
 	<link href="fontawesome/css/all.min.css" rel="stylesheet">
-	<link href="fontawesome/js/all.min.js" rel="stylesheet">
+	
 
 </head>
 <body class="greyish">
 	<header>
 		<nav class="greyish" role="navigation">
+			<a id="logo-container" href="index.html" class="brand-logo bluec-text pmarker" style="padding-left: 25mm">TWBP</a>
 			<div class="nav-wrapper container">
-				<a id="logo-container" href="index.html" class="brand-logo bluec-text pmarker">TWBP</a>
 				<ul class="right hide-on-med-and-down">
-						<li><a href="#" class="white-text righteous"><i class="material-icons left bluec-text">search</i>Search</a></li>
-						<li><a href="gallery.html" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
-						<li><a href="login.html" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log In</a></li>
-					  </ul>
+					<li>
+						<div class="col s12 righteous">      
+							<div class="input-field col s12">
+								<i class="material-icons prefix">search</i>
+								<input type="text" id="autocomplete-input" class="autocomplete">
+								<label for="autocomplete-input" >Search</label>
+							</div>
+						</div>
+					</li>
+					<li><a href="gallery.html" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
+					<li><a href="login.html" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log In</a></li>
+				</ul>
 				  
 				<ul id="nav-mobile" class="sidenav greyish">
 					<li><a href="#" class="white-text righteous"><i class="material-icons left bluec-text">search</i>Search</a></li>
@@ -127,5 +135,6 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/init.js"></script>
+	<script src="fontawesome/js/all.min.js"></script>
   </body>
 </html>

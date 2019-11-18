@@ -6022,9 +6022,9 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 .chips.focus {
-  border-bottom: 1px solid #26a69a;
-  -webkit-box-shadow: 0 1px 0 0 #26a69a;
-          box-shadow: 0 1px 0 0 #26a69a;
+  border-bottom: 1px solid #3A81EB;
+  -webkit-box-shadow: 0 1px 0 0 #3A81EB;
+          box-shadow: 0 1px 0 0 #3A81EB;
 }
 
 .chips:hover {
@@ -6723,7 +6723,7 @@ textarea.materialize-textarea {
 
 /* Autocomplete */
 .autocomplete-content li .highlight {
-  color: #444;
+  color: #3A81EB;
 }
 
 .autocomplete-content li img {
