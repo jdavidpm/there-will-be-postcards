@@ -37,11 +37,9 @@ $( document ).ready(function() {
       tag: 'Google',
     }],
   });
-  $('.chips-placeholder').chips({
-    placeholder: 'Enter a tag',
-    secondaryPlaceholder: '+Tag',
-  });
-  $('.chips-autocomplete').chips({
+  $('.chips-placeholder.chips-autocomplete').chips({
+    placeholder: 'Friend\'s e-mails',
+    secondaryPlaceholder: '+e-mail',
     autocompleteOptions: {
       data: {
         'Apple': null,
@@ -52,4 +50,5 @@ $( document ).ready(function() {
       minLength: 1
     }
   });
+
 });
