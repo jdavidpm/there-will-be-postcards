@@ -107,7 +107,7 @@
 						<p class="grey-text text-lighten-4 josefin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis leo arcu, id efficitur quam efficitur ut. Vestibulum pellentesque feugiat rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi nibh ex, sodales in dui sit amet, imperdiet feugiat mauris.</p>
 				</div>
 				<div class="col l3 s12">
-					<h4 class="greyish-text staat">Settings</h4>
+					<h4 class="greyish-text staat">Quick Access</h4>
 					<ul>
 						<li><a class="greyish-text righteous" href="#!">Link 1</a></li>
 						<li><a class="greyish-text righteous" href="#!">Link 2</a></li>
