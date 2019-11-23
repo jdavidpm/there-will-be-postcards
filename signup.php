@@ -19,8 +19,8 @@
     <div class="bg-image2"></div>
     <a class="btn-floating btn-large waves-effect waves-light bluec corner tooltipped dropdown-trigger" data-beloworigin="true" data-target="dropdown1" data-position="left" data-tooltip="Menu"><i class="material-icons">menu</i></a>
     <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="index.html" class="bluec-text"><i class="material-icons bluec-text">home</i>Home</a></li>
-            <li><a href="gallery.html" class="bluec-text"><i class="material-icons bluec-text">view_module</i>Gallery</a></li>
+            <li><a href="index.php" class="bluec-text"><i class="material-icons bluec-text">home</i>Home</a></li>
+            <li><a href="gallery.php" class="bluec-text"><i class="material-icons bluec-text">view_module</i>Gallery</a></li>
             <li class="divider" tabindex="-1"></li>
             <li><a href="#!" class="bluec-text"><i class="fab fa-facebook bluec-text"></i>Facebook</a></li>
             <li><a href="#!" class="bluec-text"><i class="fab fa-twitter bluec-text"></i>Twitter</a></li>
@@ -77,7 +77,7 @@
                     </div>
                     <div class="row josefin">
                         <div class="input-field col s12 m12 l12">
-                            <p class="margin medium-small"><a href="login.html">Already Register?</a></p>
+                            <p class="margin medium-small"><a href="login.php">Already Register?</a></p>
                         </div>       
                     </div>
                 </form>

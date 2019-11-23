@@ -17,7 +17,7 @@
 	<header>
 		<nav class="greyish" role="navigation">
 			<div class="nav-wrapper container">
-				<a id="logo-container" href="index.html" class="brand-logo bluec-text pmarker">TWBP</a>
+				<a id="logo-container" href="index.php" class="brand-logo bluec-text pmarker">TWBP</a>
 				<ul class="right hide-on-med-and-down">
 						<li>
                             <div class="col s12 righteous">      
@@ -28,8 +28,8 @@
                                 </div>
                             </div>
                         </li>
-						<li><a href="gallery.html" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
-						<li><a href="login.html" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log In</a></li>
+						<li><a href="gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
+						<li><a href="login.php" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log In</a></li>
 					  </ul>
 				  
 				<ul id="nav-mobile" class="sidenav greyish">

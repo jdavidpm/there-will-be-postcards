@@ -17,7 +17,7 @@
 	<header>
 		<nav class="greyish" role="navigation">
 			<div class="nav-wrapper container">
-				<a id="logo-container" href="index.html" class="brand-logo bluec-text pmarker">TWBP</a>
+				<a id="logo-container" href="index.php" class="brand-logo bluec-text pmarker">TWBP</a>
 				<ul class="right hide-on-med-and-down">
 						<li>
 							<div class="col s12 righteous">      

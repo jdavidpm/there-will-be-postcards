@@ -17,7 +17,7 @@
 <body class="greyish">
 	<header>
 		<nav class="greyish" role="navigation">
-			<a id="logo-container" href="index.html" class="brand-logo bluec-text pmarker" style="padding-left: 25mm">TWBP</a>
+			<a id="logo-container" href="index.php" class="brand-logo bluec-text pmarker" style="padding-left: 25mm">TWBP</a>
 			<div class="nav-wrapper container">
 				<ul class="right hide-on-med-and-down">
 					<li>
@@ -29,14 +29,14 @@
 							</div>
 						</div>
 					</li>
-					<li><a href="gallery.html" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
-					<li><a href="login.html" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log In</a></li>
+					<li><a href="gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
+					<li><a href="login.php" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log In</a></li>
 				</ul>
 				  
 				<ul id="nav-mobile" class="sidenav greyish">
 					<li><a href="#" class="white-text righteous"><i class="material-icons left bluec-text">search</i>Search</a></li>
-					<li><a href="gallery.html" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
-					<li><a href="login.html" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log In</a></li>
+					<li><a href="gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
+					<li><a href="login.php" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log In</a></li>
 				</ul>
 				<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="bluec-text material-icons">menu</i></a>
 			</div>
@@ -51,8 +51,8 @@
 					<h5 class="header col s12 staat greyish-text">Send electronic postcards anytime you want to anyone you know<br></h5>
 				</div>
 				<div class="row center">
-					<a href="gallery.html" id="toGallery" class="btn-large waves-effect waves-dark bluec righteous">Every Postcard</a>
-					<a href="gallery.html#most" id="toGallery" class="btn-large waves-effect waves-dark bluec righteous">Most Beloved</a>
+					<a href="gallery.php" id="toGallery" class="btn-large waves-effect waves-dark bluec righteous">Every Postcard</a>
+					<a href="gallery.php#most" id="toGallery" class="btn-large waves-effect waves-dark bluec righteous">Most Beloved</a>
 				</div>
 				<h5><br><br><br><br><br><br><br><br><br><br><br><br></h5>
 			</div>
