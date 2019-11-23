@@ -75,15 +75,15 @@
 					<div class="carousel-fixed-item center"><a class="waves-effect white grey-text darken-text-2"></a></div>
 					<div class="carousel-item transparentish-text white-text" href="#one!">
 						<h3>The Most Beloved <i class="fas fa-heart red-text"></i></h3>
-						<img src="images/p1.jpg">
+						<div id="mostBeloved"></div>
 					</div>
 					<div class="carousel-item transparentish-text white-text" href="#two!">
 						<h3>The Most Recent <i class="fas fa-sync green-text"></i></h3>
-						<img src="images/p2.jpg">
+						<div id="mostRecent"></div>
 					</div>
 					<div class="carousel-item transparentish-text white-text" href="#three!">
 						<h3>Our Recommendation <i class="fas fa-user-friends blueb-text"></i></h3>
-						<img src="images/p3.jpg">
+						<div id="ourRecommend"></div>
 					</div>
 				</div>
 	</div>
@@ -92,7 +92,7 @@
 		<div class="section no-pad-bot">
 			<div class="container">
 				<div class="row center">
-					<h5 class="header col s12 staat greyish-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis leo arcu, id efficitur quam efficitur ut.</h5>
+					<h5 class="header col s12 staat greyish-text">Send signed postcards to all your friends!</h5>
 				</div>
 			</div>
 		</div>
@@ -103,16 +103,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col l6 s12">
-					<h4 class="greyish-text staat">Company Bio</h4>
+					<h4 class="greyish-text staat">About us</h4>
 						<p class="grey-text text-lighten-4 josefin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis leo arcu, id efficitur quam efficitur ut. Vestibulum pellentesque feugiat rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi nibh ex, sodales in dui sit amet, imperdiet feugiat mauris.</p>
 				</div>
 				<div class="col l3 s12">
 					<h4 class="greyish-text staat">Quick Access</h4>
 					<ul>
-						<li><a class="greyish-text righteous" href="#!">Link 1</a></li>
-						<li><a class="greyish-text righteous" href="#!">Link 2</a></li>
-						<li><a class="greyish-text righteous" href="#!">Link 3</a></li>
-						<li><a class="greyish-text righteous" href="#!">Link 4</a></li>
+						<li><a class="greyish-text righteous" href="#!">Most Beloved</a></li>
+						<li><a class="greyish-text righteous" href="#!">Most Recent </a></li>
+						<li><a class="greyish-text righteous" href="#!">Our Recommendation</a></li>
 					</ul>
 				</div>
 				<div class="col l3 s12">

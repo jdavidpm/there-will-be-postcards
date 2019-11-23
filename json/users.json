@@ -1,7 +1,0 @@
-{
-    "user":
-    [
-        {"id": 0, "firstName": "Joaquin", "lastName": "Phoenix", "email": "inherentMan@gmail.com", "password": "eaf50944f364747d044f05209bbadb06", "gender": "Male", "birthdate": "Oct 28, 1972"},
-        {"id": 1, "firstName": "Paul", "lastName": "Anderson", "email": "manPunched@gmail.com", "password": "eaf50944f364747d044f05209bbadb06", "gender": "Male", "birthdate": "Nov 28, 1980"}
-    ]
-}

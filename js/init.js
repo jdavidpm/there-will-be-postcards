@@ -1,47 +1,30 @@
-$( document ).ready(function() {
+function getBeloved(){return '"postcards/p0.jpg"'; }
+function getRecent(){return '"postcards/p1.jpg"'; }
+function getRecommend(){return '"postcards/p0.jpg"'; }
+
+$( document ).ready(function(){
   $('input.autocomplete').autocomplete({
-    data: {
-      "Apple": null,
+    data:{
+      "Christmas": null,
       "Microsoft": null,
       "Google": 'https://placehold.it/250x250'
     },
   });
-  $('select').formSelect();
-  $('.carousel').carousel();
-  $('.datepicker').datepicker();
-  $('.sidenav').sidenav();
-  $('.parallax').parallax();
-  $('.materialboxed').materialbox();
-  $('.slider').slider({
-    indicators: false,
-    height: 600,
-    duration: 500,
-    interval: 2000
-  });
-  $('.tooltipped').tooltip();
   $('.dropdown-trigger').dropdown({
-      constrainWidth: false,
-      coverTrigger: false,
-      closeOnClick: true,
-      alignment: 'right'
+    constrainWidth: false,
+    coverTrigger: false,
+    closeOnClick: true,
+    alignment: 'right'
     }
   );
-
-  $('.chips').chips();
   $('.chips-initial').chips({
-    data: [{
-      tag: 'Apple',
-    }, {
-      tag: 'Microsoft',
-    }, {
-      tag: 'Google',
-    }],
+    data: [{tag: 'Christmas',}, {tag: 'Valentines',}, {tag: 'Birthday',}],
   });
   $('.chips-placeholder.chips-autocomplete').chips({
     placeholder: 'Friend\'s e-mails',
     secondaryPlaceholder: '+e-mail',
-    autocompleteOptions: {
-      data: {
+    autocompleteOptions:{
+      data:{
         'Apple': null,
         'Microsoft': null,
         'Google': null
@@ -50,5 +33,24 @@ $( document ).ready(function() {
       minLength: 1
     }
   });
+  $('.slider').slider({
+    indicators: false,
+    height: 600,
+    duration: 500,
+    interval: 2000
+  });
+  $('select').formSelect();
+  $('.carousel').carousel();
+  $('.datepicker').datepicker();
+  $('.sidenav').sidenav();
+  $('.parallax').parallax();
+  $('.materialboxed').materialbox();
+  $('.tooltipped').tooltip();
+  $('.chips').chips();
+
+  //get slider images
+  $('#mostBeloved').prepend('<img src=' + getBeloved() + ' class="responsive-img">')
+  $('#ourRecommend').prepend('<img src=' + getRecommend() + ' class="responsive-img">')
+  $('#mostRecent').prepend('<img src=' + getRecent() + ' class="responsive-img">')
 
 });

@@ -1,7 +1,0 @@
-{
-    "postcard":
-    [
-        {"id": 0, "category": ["birthday", "christmas"], "timesSent": 0, "locationDir": "postcards/p0.jpg"},
-        {"id": 1, "category": ["christmas", "valentines"], "timesSent": 0, "locationDir": "postcards/p1.jpg"}
-    ]
-}
