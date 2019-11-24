@@ -7,7 +7,7 @@ $(document).ready(function(){
             e.preventDefault();
             $.ajax({
                 method:"POST",
-                url:"./pages/login.php",
+                url:"confirmLogin.php",
                 data:$("#formLogin").serialize(),
                 cache:false,
                 success:function(AX){
@@ -20,13 +20,13 @@ $(document).ready(function(){
                         type:tipoAlerts[objAX.val],
                         onDestroy:function(){
                             if(objAX.val == 1){
-                                window.location.replace("./pages/profile.php");
+                                window.location.replace("profile.php");
                             }
                         }
                     });
                 },
                 error : function(jqXHR, status, error) {
-                    alert('Disculpe, existió un problema');
+                    alert('Sorry');
                 },
             });
         }

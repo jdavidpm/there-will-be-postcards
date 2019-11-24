@@ -7,11 +7,11 @@
 	
 	<!-- CSS  -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/mystyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/mystyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Cinzel|Josefin+Sans|Liu+Jian+Mao+Cao|Permanent+Marker|Righteous|Staatliches|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-	<link href="fontawesome/css/all.min.css" rel="stylesheet">
+	<link href="../fontawesome/css/all.min.css" rel="stylesheet">
 </head>
 <body class="greyish">
 	<header>
@@ -19,7 +19,7 @@
     <div class="bg-image2"></div>
     <a class="btn-floating btn-large waves-effect waves-light bluec corner tooltipped dropdown-trigger" data-beloworigin="true" data-target="dropdown1" data-position="left" data-tooltip="Menu"><i class="material-icons">menu</i></a>
     <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="index.php" class="bluec-text"><i class="material-icons bluec-text">home</i>Home</a></li>
+            <li><a href="../index.html" class="bluec-text"><i class="material-icons bluec-text">home</i>Home</a></li>
             <li><a href="gallery.php" class="bluec-text"><i class="material-icons bluec-text">view_module</i>Gallery</a></li>
             <li class="divider" tabindex="-1"></li>
             <li><a href="#!" class="bluec-text"><i class="fab fa-facebook bluec-text"></i>Facebook</a></li>
@@ -85,9 +85,9 @@
         </div>
     </main>
 	<!--  Scripts-->
-	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script src="js/init.js"></script>
-    <script src="fontawesome/js/all.min.js"></script>
+    <script src="../js/init.js"></script>
+    <script src="../fontawesome/js/all.min.js"></script>
   </body>
 </html>
