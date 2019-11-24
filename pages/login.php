@@ -55,10 +55,7 @@
                         <div class="row josefin">
                             <div class="s6 m6 l6">
                                 <p class="margin center medium-small"><a href="signup.php">Register Now</a></p>
-                            </div>
-                            <div class="col s6 m6 l6">
-                                <p class="margin center medium-small"><a href="#">Forgot password?</a></p>
-                            </div>          
+                            </div>       
                         </div>
                     </form>
                 </div>

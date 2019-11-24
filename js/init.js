@@ -40,9 +40,9 @@ $( document ).ready(function(){
     duration: 500,
     interval: 2000
   });
+  $('.datepicker').datepicker({format:"yyyy-dd-mm"});
   $('select').formSelect();
   $('.carousel').carousel();
-  $('.datepicker').datepicker();
   $('.sidenav').sidenav();
   $('.parallax').parallax();
   $('.materialboxed').materialbox();

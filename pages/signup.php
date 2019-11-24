@@ -19,12 +19,12 @@
     <div class="bg-image2"></div>
     <a class="btn-floating btn-large waves-effect waves-light bluec corner tooltipped dropdown-trigger" data-beloworigin="true" data-target="dropdown1" data-position="left" data-tooltip="Menu"><i class="material-icons">menu</i></a>
     <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="../index.html" class="bluec-text"><i class="material-icons bluec-text">home</i>Home</a></li>
-            <li><a href="gallery.php" class="bluec-text"><i class="material-icons bluec-text">view_module</i>Gallery</a></li>
+            <li><a href="../index.html" class="bluec-text"><i class="fas fa-home bluec-text fa-2x fa-pull-left"></i>Home</a></li>
+            <li><a href="gallery.php" class="bluec-text"><i class="fas fa-images bluec-text fa-2x fa-pull-left"></i>Gallery</a></li>
             <li class="divider" tabindex="-1"></li>
-            <li><a href="#!" class="bluec-text"><i class="fab fa-facebook bluec-text"></i>Facebook</a></li>
-            <li><a href="#!" class="bluec-text"><i class="fab fa-twitter bluec-text"></i>Twitter</a></li>
-            <li><a href="#!" class="bluec-text"><i class="fab fa-instagram bluec-text"></i>Instagram</a></li>
+            <li><a href="#!" class="bluec-text"><i class="fab fa-facebook bluec-text fa-2x fa-pull-left"></i>Facebook</a></li>
+            <li><a href="#!" class="bluec-text"><i class="fab fa-twitter bluec-text fa-2x fa-pull-left"></i>Twitter</a></li>
+            <li><a href="#!" class="bluec-text"><i class="fab fa-instagram bluec-text fa-2x fa-pull-left"></i>Instagram</a></li>
     </ul>
     <main class="valign-wrapper above">
         <div id="signup-page" class="row">
@@ -34,29 +34,37 @@
                     <div class="row">
                         <div class="input-field col s6 josefin">
                             <input class="validate" id="firstName" type="text">
-                            <label for="firstName" data-error="wrong" data-success="right"><i class="fas fa-address-card left"></i>FIRST NAME</label>
+                            <label for="firstName" data-error="wrong" data-success="right"><i class="fas fa-address-card fa-lg fa-pull-left"></i>FIRST NAME</label>
                         </div>
                         <div class="input-field col s6 josefin">
                             <input class="validate" id="email" type="email">
-                            <label for="email" data-error="wrong" data-success="right"><i class="far fa-address-card left"></i>SECOND NAME</label>
+                            <label for="email" data-error="wrong" data-success="right"><i class="far fa-address-card fa-lg fa-pull-left"></i>SECOND NAME</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 josefin">
                             <input class="validate" id="secondName" type="text">
-                            <label for="secondName" data-error="wrong" data-success="right"><i class="far fa-envelope left"></i>EMAIL</label>
+                            <label for="secondName" data-error="wrong" data-success="right"><i class="far fa-envelope fa-lg fa-pull-left"></i>EMAIL</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 josefin">
                             <input id="password" type="password">
-                            <label for="password"><i class="fas fa-key left"></i>PASSWORD</label>
+                            <label for="password"><i class="fas fa-lock fa-lg fa-pull-left"></i>PASSWORD</label>
                         </div>
                     </div>
                     <div class="row left-align valign-wrapper">
-                        <div class="input-field col s2 josefin greyish-text"></div>
+                        <div class="input-field col s4 josefin greyish-text center-align file-field input-field">
+                            <div class="btn waves-effect waves-light col s4 bluec righteous">
+                                <i class="fa fa-image fa-3x fa-pull-left"></i>
+                                <input type="file" data-validetta="required">
+                            </div>
+                            <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Select a picture">
+                        </div>    
+                        </div>
                         <div class="input-field col s4 josefin greyish-text">
-                            <h6 class="grey-text"><i class="fas fa-venus-mars left"></i>GENDER</h6>
+                            <h6 class="grey-text"><i class="fas fa-venus-mars fa-lg fa-pull-left"></i>GENDER</h6>
                             <select>
                                 <option value="" disabled selected>Choose gender</option>
                                 <option value="1">Female</option>
@@ -65,10 +73,9 @@
                             </select>   
                         </div>
                         <div class="input-field col s4 josefin greyish-text">
-                            <h6 class="grey-text"><i class="fas fa-birthday-cake left"></i>BIRTHDATE</h6>
+                            <h6 class="grey-text"><i class="fas fa-birthday-cake fa-pull-left"></i>BIRTHDATE</h6>
                             <input type="text" class="datepicker">
                         </div>
-                        <div class="input-field col s2 greyish-text"></div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
