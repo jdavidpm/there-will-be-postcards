@@ -30,56 +30,6 @@
     <main class="valign-wrapper above">
         <div id="signup-page" class="row">
             <div class="col s12 z-depth-6 card-panel">
-                <!--<form id="signForm">
-                    <div class="input-field col s6 josefin">
-                        <input class="validate" id="firstName" type="text" for="firstName" data-validetta="required">
-                        <label for="firstName" data-error="wrong" data-success="right"><i class="fas fa-address-card fa-lg fa-pull-left"></i>FIRST NAME</label>
-                    </div>
-                    <div class="input-field col s6 josefin">
-                        <input class="validate" id="lastName" type="text" for="lastName" data-validetta="required">
-                        <label for="lastName" data-error="wrong" data-success="right"><i class="far fa-address-card fa-lg fa-pull-left"></i>LAST NAME</label>
-                    </div>
-                    <div class="input-field col s12 josefin">
-                        <input class="validate" id="email" type="text" for="email" data-validetta="required">
-                        <label for="email" data-error="wrong" data-success="right"><i class="far fa-envelope fa-lg fa-pull-left"></i>EMAIL</label>
-                    </div>
-                    <div class="input-field col s12 josefin">
-                        <input id="password" type="password" for="password" data-validetta="required">
-                        <label for="password"><i class="fas fa-lock fa-lg fa-pull-left"></i>PASSWORD</label>
-                    </div>      
-                    <div class="input-field col s6 josefin greyish-text">
-                        <h6 class="grey-text"><i class="fas fa-venus-mars fa-lg fa-pull-left"></i>GENDER</h6>
-                        <select id="gender">
-                            <option value="" disabled selected>Choose gender</option>
-                            <option value="1">Female</option>
-                            <option value="2">Male</option>
-                            <option value="3">Other</option>
-                        </select>   
-                    </div>
-                    <div class="input-field col s6 josefin greyish-text">
-                        <h6 class="grey-text"><i class="fas fa-birthday-cake fa-pull-left"></i>BIRTHDATE</h6>
-                        <input type="text" class="datepicker"  id="birthdate" data-validetta="required">
-                    </div>
-                    <div class="input-field col s12 josefin greyish-text center-align file-field input-field">
-                        <div class="btn waves-effect waves-light bluec righteous">
-                            <i class="fa fa-image fa-3x"></i>
-                            <input type="file" data-validetta="required">
-                        </div>
-                        <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text" placeholder="Select a picture">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <button type="submit" class="btn waves-effect waves-light bluec righteouse" style="width:100%;">Sign Up</button>
-                        </div>
-                    </div>
-                    <div class="row josefin">
-                        <div class="col s12 m12 l12">
-                            <p class="margin medium-small"><a href="login.php">Already Register?</a></p>
-                        </div>       
-                    </div>
-                </form>-->
                 <form id="signForm" autocomplete="off">
                     <div class="row josefin">
                         <div class="col l6 s12 m6 input-field">

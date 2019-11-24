@@ -53,14 +53,7 @@
 				<h3 class="staat">Joaquin Phoenix</h3>
 				<div id="profilePic"></div>
 				<div class="divider"></div>
-				<div id="infoProfile" class="row josefin">
-					<ul>
-						<li><div class="col push-l2 s10 m10 l10 left-align"><h5 class="grey-text"><span class="black-text">Age:</span> 73 years</h5></div></li>
-						<li><div class="col push-l2 s10 m10 l10 left-align"><h5 class="grey-text"><span class="black-text">Birthday:</span> Oct, 28</h5></div></li>
-						<li><div class="col push-l2 s10 m10 l10 left-align"><h5 class="grey-text"><span class="black-text">Gender:</span> Male</h5></div></li>
-						<li><div class="col push-l2 s10 m10 l10 left-align"><h5 class="grey-text"><span class="black-text">E-mail:</span> inrhvice@pta.com</h5></div></li>
-					</ul>
-				</div>
+				<div class="row josefin"><ul id="infoProfile"></ul></div>
 			</div>
 			<div class="col s1 m1 l1" ></div>
 			<div id="quickAccess" class="col s3 m3 l3 card-panel">

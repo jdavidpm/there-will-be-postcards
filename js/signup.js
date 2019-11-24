@@ -13,10 +13,9 @@ $(document).ready(function(){
                 processData:false,
                 cache:false,
                 success:function(AX){
-                    alert(AX);
                     var tipoAlerts = new Array("red","green");
                     var iconos = new Array("fas fa-times fa-2x","fas fa-check fa-2x");
-                    var titleArr = new Array("<h3 class=\"center-align staat\">Error</h3>", "<h3 class=\"center-align staat\">Identity Confirmed</h3>");
+                    var titleArr = new Array("<h3 class=\"center-align staat\">Error</h3>", "<h3 class=\"center-align staat\">Registration Completed</h3>");
                     var objAX = JSON.parse(AX);
                     $.alert({
                         title: titleArr[objAX.val],
