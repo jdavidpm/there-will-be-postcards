@@ -12,6 +12,7 @@
     <link href="css/mystyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Cinzel|Josefin+Sans|Liu+Jian+Mao+Cao|Permanent+Marker|Righteous|Staatliches|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
 	<link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="js/confirm/dist/jquery-confirm.min.css" rel="stylesheet">
 </head>
 <body class="greyish">
 	<header>
@@ -29,37 +30,52 @@
     <main class="valign-wrapper above">
             <div id="login-page" class="row">
                 <div class="col s12 z-depth-6 card-panel">
-                    <form class="login-form">
+                    <form class="login-form" id="formLogin">
                         <div class="row"></div><div class="row"></div>
                         <div class="row">
                             <div class="input-field col s12 josefin">
                                 <i class="material-icons prefix">mail_outline</i>
-                                <input class="validate" id="email" type="email">
-                                <label for="email" data-error="wrong" data-success="right">EMAIL</label>
+                                <label for="email">EMAIL</label>
+                                <input type="text" id="email" name="email" data-validetta="required">
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12 josefin">
                                 <i class="material-icons prefix">lock_outline</i>
-                                <input id="password" type="password">
                                 <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password" data-validetta="required">
                             </div>
                         </div>
                
                         <div class="row">
-                            <div class="input-field col s12">
-                                <a href="#" class="btn waves-effect waves-light col s12 bluec righteous">Log In</a>
+                            <div class="col s12">
+                                <button type="submit" class="btn bluec righteous waves-effect waves-ligh" style="width:100%;">Log In</button>
                             </div>
                         </div>
                         <div class="row josefin">
-                            <div class="input-field col s6 m6 l6">
-                                <p class="margin center medium-small"><a href="signup.html">Register Now</a></p>
+                            <div class="s6 m6 l6">
+                                <p class="margin center medium-small"><a href="signup.php">Register Now</a></p>
                             </div>
-                            <div class="input-field col s6 m6 l6">
+                            <div class="col s6 m6 l6">
                                 <p class="margin center medium-small"><a href="#">Forgot password?</a></p>
                             </div>          
                         </div>
                     </form>
+ <!--                   <form class="login-form" id="formLogin">
+                    <div class="col s12 l4 input-field">
+                        <i class="fas fa-user prefix blue-text"></i>
+                        <label for="email">Boleta:</label>
+                        <input type="text" id="email" name="email" data-validetta="required">
+                    </div>
+                    <div class="col s12 l4 input-field">
+                        <i class="fas fa-key prefix blue-text"></i>
+                        <label for="password">Contrase&ntilde;a</label>
+                        <input type="password" id="password" name="password" data-validetta="required">
+                    </div>
+                    <div class="col s12 l4 input-field">
+                        <button type="submit" class="btn blue" style="width:100%;">Entrar</button>
+                    </div>
+                </form>-->
                 </div>
             </div>
         </main>
@@ -68,5 +84,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="js/init.js"></script>
     <script src="fontawesome/js/all.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/validetta/dist/validetta.min.js"></script>
+    <script src="js/confirm/dist/jquery-confirm.min.js"></script>
   </body>
 </html>

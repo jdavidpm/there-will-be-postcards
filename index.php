@@ -92,7 +92,7 @@
 		<div class="section no-pad-bot">
 			<div class="container">
 				<div class="row center">
-					<h5 class="header col s12 staat greyish-text">Send signed postcards to all your friends!</h5>
+					<h3 class="header col s12 staat greyish-text">Send signed postcards to all your friends!</h3>
 				</div>
 			</div>
 		</div>
@@ -117,16 +117,16 @@
 				<div class="col l3 s12">
 					<h4 class="greyish-text staat">Social</h4>
 					<ul>
-						<li><a class="greyish-text" href="#!"><h5 class="righteous"><i class="white-text fab fa-facebook-square left"></i>Facebook</a></h5></li>
-						<li><a class="greyish-text" href="#!"><h5 class="righteous"><i class="white-text fab fa-twitter-square left"></i>Twitter</a></h5></li>
-						<li><a class="greyish-text" href="#!"><h5 class="righteous"><i class="white-text fab fa-instagram left"></i>Instagram</a></h5></li>
+						<li><a class="greyish-text" href="http://facebook.com" target="_blank"><h5 class="righteous"><i class="white-text fab fa-facebook-square prefix"></i>Facebook</a></h5></li>
+						<li><a class="greyish-text" href="http://twitter.com" target="_blank"><h5 class="righteous"><i class="white-text fab fa-twitter-square prefix"></i>Twitter</a></h5></li>
+						<li><a class="greyish-text" href="http://instagram.com" target="_blank"><h5 class="righteous"><i class="white-text fab fa-instagram prefix"></i>Instagram</a></h5></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="footer-copyright blueb">
 			<div class="container righteous">
-				Made by <a class="greyish-text text-lighten-3 pmarker" href="http://materializecss.com">Rye Catchers Inc.</a>
+				Made by <a class="greyish-text text-lighten-3 pmarker" href="signup.php">Rye Catchers Inc.</a>
 			</div>
 		</div>
 	</footer>

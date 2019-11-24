@@ -1,13 +1,14 @@
 function getBeloved(){return '"postcards/p0.jpg"'; }
 function getRecent(){return '"postcards/p1.jpg"'; }
-function getRecommend(){return '"postcards/p0.jpg"'; }
+function getRecommend(){return '"postcards/p2.jpg"'; }
 
 $( document ).ready(function(){
   $('input.autocomplete').autocomplete({
     data:{
       "Christmas": null,
-      "Microsoft": null,
-      "Google": 'https://placehold.it/250x250'
+      "Valentines": null,
+      "Birthdays": null,
+      "Miscellaneous": null
     },
   });
   $('.dropdown-trigger').dropdown({
