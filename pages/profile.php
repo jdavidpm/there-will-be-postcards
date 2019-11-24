@@ -32,7 +32,6 @@
                         <li><a href="profile.php" class="white-text righteous"><i class="material-icons left bluec-text">account_circle</i>Profile</a></li>
 						<li><a href="logout.php" class="white-text righteous"><i class="material-icons left bluec-text">close</i>Log Out</a></li>
 					  </ul>
-				  
 				<ul id="nav-mobile" class="sidenav greyish">
 					<li><a href="gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
 					<li><a href="logout.php" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log Out</a></li>
