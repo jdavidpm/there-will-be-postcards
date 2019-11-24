@@ -11,10 +11,10 @@
     if(mysqli_num_rows($resLoginV3v) == 1){
         $_SESSION["email"] = $infLoginV3v[0];
         $respAX["val"] = 1;
-        $respAX["msj"] = "<h3 class='center-align staat'>Welcome back, $infLoginV3v[1]!</h3>";
+        $respAX["msj"] = "<h3 class='center-align josefin'>Welcome back, $infLoginV3v[1]!</h3>";
     }else{
         $respAX["val"] = 0;
-        $respAX["msj"] = "<h3 class='center-align staat'>You're not registered o Wrong Credentials</h3>";
+        $respAX["msj"] = "<h3 class='center-align josefin'>You're not registered o Wrong Credentials</h3>";
     }
 
     echo json_encode($respAX);

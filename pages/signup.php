@@ -33,23 +33,23 @@
                     <div class="row"></div>
                     <div class="row">
                         <div class="input-field col s6 josefin">
-                            <input class="validate" id="firstName" type="text">
+                            <input class="validate" id="firstName" type="text" for="firstName" data-validetta="required">
                             <label for="firstName" data-error="wrong" data-success="right"><i class="fas fa-address-card fa-lg fa-pull-left"></i>FIRST NAME</label>
                         </div>
                         <div class="input-field col s6 josefin">
-                            <input class="validate" id="email" type="email">
-                            <label for="email" data-error="wrong" data-success="right"><i class="far fa-address-card fa-lg fa-pull-left"></i>SECOND NAME</label>
+                            <input class="validate" id="lastName" type="email" for="lastName" data-validetta="required">
+                            <label for="lastName" data-error="wrong" data-success="right"><i class="far fa-address-card fa-lg fa-pull-left"></i>LAST NAME</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 josefin">
-                            <input class="validate" id="secondName" type="text">
-                            <label for="secondName" data-error="wrong" data-success="right"><i class="far fa-envelope fa-lg fa-pull-left"></i>EMAIL</label>
+                            <input class="validate" id="email" type="text" for="email" data-validetta="required">
+                            <label for="email" data-error="wrong" data-success="right"><i class="far fa-envelope fa-lg fa-pull-left"></i>EMAIL</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 josefin">
-                            <input id="password" type="password">
+                            <input id="password" type="password" for="password" data-validetta="required">
                             <label for="password"><i class="fas fa-lock fa-lg fa-pull-left"></i>PASSWORD</label>
                         </div>
                     </div>
@@ -74,16 +74,16 @@
                         </div>
                         <div class="input-field col s4 josefin greyish-text">
                             <h6 class="grey-text"><i class="fas fa-birthday-cake fa-pull-left"></i>BIRTHDATE</h6>
-                            <input type="text" class="datepicker">
+                            <input type="text" class="datepicker"  id="birthdate" data-validetta="required">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s12">
-                            <a href="#" class="btn waves-effect waves-light col s12 bluec righteous">Sign Up</a>
+                        <div class="col s12">
+                            <button type="submit" class="btn waves-effect waves-light bluec righteouse" style="width:100%;">Sign Up</button>
                         </div>
                     </div>
                     <div class="row josefin">
-                        <div class="input-field col s12 m12 l12">
+                        <div class="col s12 m12 l12">
                             <p class="margin medium-small"><a href="login.php">Already Register?</a></p>
                         </div>       
                     </div>
