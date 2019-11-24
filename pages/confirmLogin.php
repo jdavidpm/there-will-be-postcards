@@ -4,18 +4,18 @@
     include("getPosts.php");
 
     $password = md5($password);
-    $respAX = array();
-    $sqlLoginV3v = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
-    $resLoginV3v = mysqli_query($conexion,$sqlLoginV3v);
-    $infLoginV3v = mysqli_fetch_row($resLoginV3v);
-    if(mysqli_num_rows($resLoginV3v) == 1){
-        $_SESSION["email"] = $infLoginV3v[0];
-        $respAX["val"] = 1;
-        $respAX["msj"] = "<h3 class='center-align josefin'>Welcome back, $infLoginV3v[1]!</h3>";
+    $queryAnalized = array();
+    $selectSQLQuery = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
+    $resultQuery = mysqli_query($conexion, $selectSQLQuery);
+    $rowsQuery = mysqli_fetch_row($resultQuery);
+    if(mysqli_num_rows($resultQuery) == 1){
+        $_SESSION["email"] = $rowsQuery[0];
+        $queryAnalized["val"] = 1;
+        $queryAnalized["msj"] = "<h3 class='center-align josefin'>Welcome back, $rowsQuery[1]!</h3>";
     }else{
-        $respAX["val"] = 0;
-        $respAX["msj"] = "<h3 class='center-align josefin'>You're not registered o Wrong Credentials</h3>";
+        $queryAnalized["val"] = 0;
+        $queryAnalized["msj"] = "<h3 class='center-align josefin'>You're not registered o Wrong Credentials</h3>";
     }
 
-    echo json_encode($respAX);
+    echo json_encode($queryAnalized);
 ?>

@@ -14,7 +14,7 @@ body {
 
 .bg-image {
     /* The image used */
-    background-image: url("../images/p2.jpg");
+    background-image: url("../postcards/p1.jpg");
   
     /* Add the blur effect */
     filter: blur(8px);
@@ -31,7 +31,7 @@ body {
 
   .bg-image2 {
     /* The image used */
-    background-image: url("../images/p1.jpg");
+    background-image: url("../postcards/p0.jpg");
   
     /* Add the blur effect */
     filter: blur(8px);
