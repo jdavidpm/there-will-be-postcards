@@ -11,7 +11,7 @@
 	<link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Cinzel|Josefin+Sans|Liu+Jian+Mao+Cao|Permanent+Marker|Righteous|Staatliches|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
 	<link href="../fontawesome/css/all.min.css" rel="stylesheet">
-
+	<link href="../js/confirm/dist/jquery-confirm.min.css" rel="stylesheet">
 </head>
 <body class="white">
 	<header>
@@ -86,88 +86,7 @@
 		</div>
 		<div id="postcardItems" class="row">
 			<div id="rowItems" class="row">
-				<div id="itemPostcard" class="col s12 m12 l6">
-					<div class="card">
-						<div class="card-image">
-							<img class="materialboxed" src="../postcards/p1.jpg">
-							<span class="card-title staat">Before the Devil Knows You're Dead</span>
-							<a href="send.php" class="btn-floating halfway-fab waves-effect waves-light bluec" title="Send"><i class="fas fa-paper-plane"></i></a>
-						</div>
-						<div class="card-content greyish">
-							<p class="white-text josefin">I am a very simple card.</p>
-							<a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a>
-						</div>
-					</div>
-				</div>
-				<div id="itemPostcard" class="col s12 m12 l6">
-					<div class="card">
-						<div class="card-image">
-							<img class="materialboxed" src="../postcards/p5.jpg">
-							<span class="card-title staat">The Irishman</span>
-							<a class="btn-floating halfway-fab waves-effect waves-light bluec" title="Send"><i class="fas fa-paper-plane"></i></a>
-						</div>
-						<div class="card-content greyish">
-							<p class="white-text josefin">I am a very simple card. </p>
-							<a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="rowItems" class="row">
-				<div id="itemPostcard" class="col s12 m12 l6">
-					<div class="card">
-						<div class="card-image">
-							<img class="materialboxed" src="../postcards/p6.jpg">
-							<span class="card-title staat">Quien Te Cantará</span>
-							<a class="btn-floating halfway-fab waves-effect waves-light bluec" title="Send"><i class="fas fa-paper-plane"></i></a>
-						</div>
-						<div class="card-content greyish">
-							<p class="white-text josefin">I am a very simple card.</p>
-							<a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a>
-						</div>
-					</div>
-				</div>
-				<div id="itemPostcard" class="col s12 m12 l6">
-					<div class="card">
-						<div class="card-image">
-							<img class="materialboxed" src="../postcards/p7.jpg">
-							<span class="card-title staat">The Sisters Brothers</span>
-							<a class="btn-floating halfway-fab waves-effect waves-light bluec" title="Send"><i class="fas fa-paper-plane"></i></a>
-						</div>
-						<div class="card-content greyish">
-							<p class="white-text josefin">I am a very simple card. </p>
-							<a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="rowItems" class="row">
-				<div id="itemPostcard" class="col s12 m12 l6">
-					<div class="card">
-						<div class="card-image">
-							<img class="materialboxed" src="../postcards/p8.jpg">
-							<span class="card-title staat">The Favourite</span>
-							<a class="btn-floating halfway-fab waves-effect waves-light bluec" title="Send"><i class="fas fa-paper-plane"></i></a>
-						</div>
-						<div class="card-content greyish">
-							<p class="white-text josefin">I am a very simple card.</p>
-							<a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a>
-						</div>
-					</div>
-				</div>
-				<div id="itemPostcard" class="col s12 m12 l6">
-					<div class="card">
-						<div class="card-image">
-							<img class="materialboxed" src="../postcards/p9.jpg">
-							<span class="card-title staat">A Serious Man</span>
-							<a class="btn-floating halfway-fab waves-effect waves-light bluec" title="Send"><i class="fas fa-paper-plane"></i></a>
-						</div>
-						<div class="card-content greyish">
-							<p class="white-text josefin">I am a very simple card. </p>
-							<a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a>
-						</div>
-					</div>
-				</div>
+		
 			</div>
 		</div>
 	</main>
@@ -183,6 +102,8 @@
 	<script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 	<script src="../js/init.js"></script>
+	<script src="../js/showPostcards.js"></script>
 	<script src="../fontawesome/js/all.min.js"></script>
+	<script src="../js/confirm/dist/jquery-confirm.min.js"></script>
   </body>
 </html>

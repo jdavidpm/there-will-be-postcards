@@ -20,12 +20,12 @@
     <div class="bg-image"></div>
     <a class="btn-floating btn-large waves-effect waves-light bluec corner tooltipped dropdown-trigger" data-beloworigin="true" data-target="dropdown1" data-position="left" data-tooltip="Menu"><i class="material-icons">menu</i></a>
     <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="../index.html" class="bluec-text"><i class="material-icons bluec-text">home</i>Home</a></li>
-        <li><a href="gallery.php" class="bluec-text"><i class="material-icons bluec-text">view_module</i>Gallery</a></li>
-        <li class="divider" tabindex="-1"></li>
-        <li><a href="#!" class="bluec-text"><i class="fab fa-facebook bluec-text"></i>Facebook</a></li>
-        <li><a href="#!" class="bluec-text"><i class="fab fa-twitter bluec-text"></i>Twitter</a></li>
-        <li><a href="#!" class="bluec-text"><i class="fab fa-instagram bluec-text"></i>Instagram</a></li>
+            <li><a href="../index.html" class="bluec-text"><i class="fas fa-home bluec-text fa-2x fa-pull-left"></i>Home</a></li>
+            <li><a href="gallery.php" class="bluec-text"><i class="fas fa-images bluec-text fa-2x fa-pull-left"></i>Gallery</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="http://facebook.com" target="_blank" class="bluec-text"><i class="fab fa-facebook bluec-text fa-2x fa-pull-left"></i>Facebook</a></li>
+            <li><a href="http://twitter.com" target="_blank" class="bluec-text"><i class="fab fa-twitter bluec-text fa-2x fa-pull-left"></i>Twitter</a></li>
+            <li><a href="http://instagram.com" target="_blank" class="bluec-text"><i class="fab fa-instagram bluec-text fa-2x fa-pull-left"></i>Instagram</a></li>
     </ul>
     <main class="valign-wrapper above">
             <div id="login-page" class="row">
