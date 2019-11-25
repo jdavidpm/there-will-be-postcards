@@ -1,22 +1,19 @@
 <?php
     session_start();
     include("configDB.php");
-    //include("getPosts.php");
 
-    $password = md5('qwerty');
     $queryAnalized = array();
-    $selectSQLQuery = "SELECT * FROM user WHERE email = 'prueba@gmail.com' AND password = '$password'";
+    $idPost = array();
+    $naPost = array();
+    $selectSQLQuery = "SELECT idpostcard, namepost FROM postcard;";
     $resultQuery = mysqli_query($conexion, $selectSQLQuery);
-    $rowsQuery = mysqli_fetch_row($resultQuery);
-    if(mysqli_num_rows($resultQuery) == 1)
+    //$rowsQuery = mysqli_fetch_array($resultQuery);
+    while ($row = mysqli_fetch_array($resultQuery))
     {
-        $_SESSION["iduser"] = $rowsQuery[0];
-        $queryAnalized["val"] = 1;
-        $queryAnalized["msj"] = "<h3 class='center-align josefin'>Welcome back, $rowsQuery[1]!</h3>";
-    }else{
-        $queryAnalized["val"] = 0;
-        $queryAnalized["msj"] = "<h3 class='center-align josefin'>You're not registered o Wrong Credentials</h3>";
+        array_push($idPost, $row["idpostcard"]);
+        array_push($naPost, $row["namepost"]);
     }
-
+    $queryAnalized["idPost"] = $idPost;
+    $queryAnalized["naPost"] = $naPost;
     echo json_encode($queryAnalized);
 ?>
