@@ -1,12 +1,12 @@
 <?php
-    include("configBD.php");
+    include("configDB.php");
 
     $iduser = $_SESSION["iduser"];
 
-    $sqlInfAlumno = "SELECT * FROM user WHERE iduser = '$iduser'";
-    $resInfAlumno = mysqli_query($conexion, $sqlInfAlumno);
-    $infAlumno = mysqli_fetch_row($resInfAlumno);
+    $sqlinfoUser = "SELECT * FROM user WHERE iduser = '$iduser'";
+    $resinfoUser = mysqli_query($conexion, $sqlinfoUser);
+    $infoUser = mysqli_fetch_row($resinfoUser);
 
-    $foto = "./../images/pf/$iduser.jpg";
+    $profilePic = "./../images/pf/$iduser.jpg";
 
 ?>

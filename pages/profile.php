@@ -2,7 +2,7 @@
 	session_start();
 	if(isset($_SESSION["iduser"]))
 	{
-       	 include("./getInfoUser.php");
+       	 include("getInfoUser.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,11 +36,11 @@
 						</li>
                         <li><a href="gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
                         <li><a href="profile.php" class="white-text righteous"><i class="material-icons left bluec-text">account_circle</i>Profile</a></li>
-						<li><a href="logout.php" class="white-text righteous"><i class="material-icons left bluec-text">close</i>Log Out</a></li>
+						<li><a href="logout.php?nombreSesion=iduser" class="white-text righteous"><i class="material-icons left bluec-text">close</i>Log Out</a></li>
 					  </ul>
 				<ul id="nav-mobile" class="sidenav greyish">
 					<li><a href="gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
-					<li><a href="logout.php" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log Out</a></li>
+					<li><a href="logout.php?nombreSesion=iduser" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log Out</a></li>
 				</ul>
 				<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="bluec-text material-icons">menu</i></a>
 			</div>
@@ -49,21 +49,27 @@
 
 	<main class="center-align">
 		<div id ="panelProfile" class="row" style="margin: 5% 5% 5% 5%;">
-			<div id="recentPostcards"class="col s3 m3 l3 card-panel">
-				<h4 class="staat">Recently Received</h4>
+			<div id="recentlyReceived"class="col s2 m2 l2 card-panel">
+				<h5 class="staat">Recently Received</h5>
 				<div class="divider"></div>
 				<h4 class="staat"></h4>
 			</div>
 			<div class="col s1 m1 l1" ></div>
-			<div id="profileCard" class="col s4 m4 l4 card-panel" >
-				<h3 class="staat">Joaquin Phoenix<?php echo "$infAlumno[1] $infAlumno[2] $infAlumno[3]"; ?></h3>
-				<div id="profilePic"></div>
+			<div id="profileCard" class="col s6 m6 l6 card-panel" >
+				<h3 class="staat"><?php echo "$infoUser[1] $infoUser[2]";?></h3>
+				<img src=<?php echo "$profilePic";?> class="circle hoverable responsive-img" width="250px" style="margin: 5% 0% 5% 0%;">
 				<div class="divider"></div>
-				<div class="row josefin"><ul id="infoProfile"></ul></div>
+				<div class="row josefin">
+				<ul>
+					<li><div class="col push-l1 s10 m10 l10 left-align"><h5 class="grey-text"><span class="black-text">Gender:</span><?php echo " $infoUser[5]";?></h5></div></li>
+					<li><div class="col push-l1 s10 m10 l10 left-align"><h5 class="grey-text"><span class="black-text">Birthdate:</span><?php echo " $infoUser[6]";?></h5></div></li>
+					<li><div class="col push-l1 s10 m10 l10 left-align"><h5 class="grey-text"><span class="black-text">Mail:</span><?php echo "$infoUser[3]";?></h5></div></li>
+				</ul>
+				</div>
 			</div>
 			<div class="col s1 m1 l1" ></div>
-			<div id="quickAccess" class="col s3 m3 l3 card-panel">
-				<h4 class="staat">Recently Sent</h4>
+			<div id="recentlySent" class="col s2 m2 l2 card-panel">
+				<h5 class="staat">Recently Sent</h5>
 				<div class="divider"></div>
 				<h4 class="staat"></h4>
 			</div>
@@ -89,6 +95,6 @@
 	}
 	else
 	{
-        header("location:./../index.html");
+        header("location:./../");
 	}
 ?>
