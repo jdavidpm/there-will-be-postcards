@@ -7,7 +7,6 @@
     $naPost = array();
     $selectSQLQuery = "SELECT idpostcard, namepost FROM postcard;";
     $resultQuery = mysqli_query($conexion, $selectSQLQuery);
-    //$rowsQuery = mysqli_fetch_array($resultQuery);
     while ($row = mysqli_fetch_array($resultQuery))
     {
         array_push($idPost, $row["idpostcard"]);

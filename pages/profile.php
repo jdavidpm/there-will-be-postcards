@@ -63,7 +63,7 @@
 				<ul>
 					<li><div class="col push-l1 s10 m10 l10 left-align"><h5 class="grey-text"><span class="black-text">Gender:</span><?php echo " $infoUser[5]";?></h5></div></li>
 					<li><div class="col push-l1 s10 m10 l10 left-align"><h5 class="grey-text"><span class="black-text">Birthdate:</span><?php echo " $infoUser[6]";?></h5></div></li>
-					<li><div class="col push-l1 s10 m10 l10 left-align"><h5 class="grey-text"><span class="black-text">Mail:</span><?php echo "$infoUser[3]";?></h5></div></li>
+					<li><div class="col push-l1 s10 m10 l10 left-align"><h5 class="grey-text"><span class="black-text">Mail:</span><?php echo " $infoUser[3]";?></h5></div></li>
 				</ul>
 				</div>
 			</div>

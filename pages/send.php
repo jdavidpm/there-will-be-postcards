@@ -1,3 +1,8 @@
+<?php
+	session_start();
+    $tmp = $_REQUEST["postToSend"];
+    $tmp = "../postcards/p".$tmp.".jpg" 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +51,7 @@
                 <div class="col s6 offset-s3 card-panel greyish white-text">
                     <span class="flow-text">
                             <h2 class="staat">Send this postcard!</h2>
-                            <img src="../postcards/p1.jpg" width="900px" class="responsive-img">
+                            <img src=<?php echo $tmp;?> width="900px" class="responsive-img">
                     </span>
                     <div id="buttonsPanel">
                         <div class="row">
@@ -55,7 +60,7 @@
                                 <input class="validate white-text" id="sign" type="text">
                                 <label for="sign" >Sign it!</label>
                             </div>
-                            <a class="btn bluec">Send</a>
+                            <a href="sendEmail.php" class="btn bluec">Send</a>
                         </div>
                     </div>
                 </div>

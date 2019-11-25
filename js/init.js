@@ -1,4 +1,4 @@
-function getBeloved(){return '"postcards/p0.jpg"'; }
+function getBeloved(){return '"postcards/p3.jpg"'; }
 function getRecent(){return '"postcards/p1.jpg"'; }
 function getRecommend(){return '"postcards/p2.jpg"'; }
 

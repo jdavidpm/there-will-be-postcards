@@ -2,7 +2,7 @@ function showPost(titlesPostcards, lastItem)
 {
     for (i = 1; i <= lastItem; i++)
     {
-        $('#rowItems').append('<div id="itemPostcard' + i + '" class="col s12 m12 l6"><div class="card"><div class="card-image"><div id="pathPostcard' + i + '"></div><div id="namePostcard' + i + '"></div><a href="send.php" class="btn-floating halfway-fab waves-effect waves-light bluec" title="Send"><i class="fas fa-paper-plane"></i></a></div><div class="card-content greyish"><div id="catPostcard' + i + '"></div></div></div></div>');
+        $('#rowItems').append('<div id="itemPostcard' + i + '" class="col s12 m12 l6"><div class="card"><div class="card-image"><div id="pathPostcard' + i + '"></div><div id="namePostcard' + i + '"></div><a href="send.php?postToSend='+i +'" class="btn-floating halfway-fab waves-effect waves-light bluec" title="Send"><i class="fas fa-paper-plane"></i></a></div><div class="card-content greyish"><div id="catPostcard' + i + '"></div></div></div></div>');
         $('#pathPostcard' + i + '').prepend('<img class="materialboxed" src="../postcards/p' + i + '.jpg">');
         $('#namePostcard' + i + '').prepend('<span class="card-title staat">' + titlesPostcards[i - 1] + '</span>');
         $('#catPostcard' + i + '').prepend('<a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a><a href="#!" class="chip">cat</a>');
