@@ -8,8 +8,9 @@
     $selectSQLQuery = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
     $resultQuery = mysqli_query($conexion, $selectSQLQuery);
     $rowsQuery = mysqli_fetch_row($resultQuery);
-    if(mysqli_num_rows($resultQuery) == 1){
-        $_SESSION["email"] = $rowsQuery[0];
+    if(mysqli_num_rows($resultQuery) == 1)
+    {
+        $_SESSION["iduser"] = $rowsQuery[0];
         $queryAnalized["val"] = 1;
         $queryAnalized["msj"] = "<h3 class='center-align josefin'>Welcome back, $rowsQuery[1]!</h3>";
     }else{

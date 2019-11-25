@@ -1,3 +1,9 @@
+<?php
+	session_start();
+	if(isset($_SESSION["iduser"]))
+	{
+       	 include("./getInfoUser.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,20 +52,20 @@
 			<div id="recentPostcards"class="col s3 m3 l3 card-panel">
 				<h4 class="staat">Recently Received</h4>
 				<div class="divider"></div>
-				<h4 class="staat">Recently Sent</h4>
+				<h4 class="staat"></h4>
 			</div>
 			<div class="col s1 m1 l1" ></div>
 			<div id="profileCard" class="col s4 m4 l4 card-panel" >
-				<h3 class="staat">Joaquin Phoenix</h3>
+				<h3 class="staat">Joaquin Phoenix<?php echo "$infAlumno[1] $infAlumno[2] $infAlumno[3]"; ?></h3>
 				<div id="profilePic"></div>
 				<div class="divider"></div>
 				<div class="row josefin"><ul id="infoProfile"></ul></div>
 			</div>
 			<div class="col s1 m1 l1" ></div>
 			<div id="quickAccess" class="col s3 m3 l3 card-panel">
-				<h4 class="staat">Configuration</h4>
+				<h4 class="staat">Recently Sent</h4>
 				<div class="divider"></div>
-				<h4 class="staat">Friends</h4>
+				<h4 class="staat"></h4>
 			</div>
 		</div>
 	</main>
@@ -79,3 +85,10 @@
 	<script src="../js/profile.js"></script>
   </body>
 </html>
+<?php
+	}
+	else
+	{
+        header("location:./../index.html");
+	}
+?>

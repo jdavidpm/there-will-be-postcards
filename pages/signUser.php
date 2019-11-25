@@ -30,7 +30,7 @@
             $dirFoto = "./../images/pf/";
             $archFoto = $dirFoto.basename($_FILES["foto"]["name"]);
             $extFoto = pathinfo($_FILES["foto"]["name"],PATHINFO_EXTENSION);
-            $destFoto = $dirFoto.$idUser.$_POST["firstName"].$_POST["lastName"].".".$extFoto;
+            $destFoto = $dirFoto.$idUser.".".$extFoto;
             if(move_uploaded_file($_FILES["foto"]["tmp_name"], $destFoto))
             {
                 $queryAnalized["msj"] .= "<h5 class='center-align josefin'>Picture saved</h5>";
