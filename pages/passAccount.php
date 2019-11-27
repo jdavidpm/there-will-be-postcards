@@ -1,4 +1,4 @@
 <?php
-    $correo = "twbp.pta@gmail.com";
-    $contrasena = "therewillbepostcards";
+    $emailSender = "twbp.pta@gmail.com";
+    $passwordSender = "therewillbepostcards";
 ?>
