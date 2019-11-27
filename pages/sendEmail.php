@@ -18,7 +18,7 @@
 
     $nameSender =  $infoSender[1].' '.$infoSender[2];
     $signSender = $_POST["sign"];
-    $emailSender = $infoSender[3];
+    $emailSenderF = $infoSender[3];
 
     $emailReceiver = $_POST["email"];
     $mail = new PHPMailer(true);
@@ -42,7 +42,7 @@
         $mail->Port = 587;                             // TCP port to connect to
     
         //Recipients
-        $mail->setFrom($emailSender, $nameSender);
+        $mail->setFrom($emailSenderF, $nameSender);
         $mail->addAddress($emailReceiver, "Friend");     // Add a recipient
             
         //Attachments
