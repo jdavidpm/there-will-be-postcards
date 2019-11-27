@@ -54,8 +54,9 @@
         $mail->Body    = "<p>".$infoPostcard[1]."Esto es una prueba para la Unidad de Aprendizaje de <strong>TWeb</strong> de la <span style='color:#069;'>ESCOM</span></p><h1 style='color:#F00;'>TWeb 2020-1</h1>'";
         $mail->AltBody = 'Texto alternativo del correo en caso de no soporte para HTML';
     
-        $mail->send();
-        echo 'Message has been sent';
+        if($mail->send()){
+            echo "Correo enviado correctamente. <a href='./alumno.php'>Regresar</a>";
+        }
     }
     catch (Exception $e)
     {

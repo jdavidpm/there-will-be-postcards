@@ -67,7 +67,8 @@
                                 <input class="validate white-text" id="sign" type="text" name="sign">
                                 <label for="sign">Sign it!</label>
                             </div>
-                            <input class="btn bluec righteous" type="submit">
+                            <input class="btn bluec righteous" type="submit" value="SEND">
+                            <button type="submit" class="btn bluec righteous waves-effect waves-ligh" formaction="getPDF.php"> Download</button>
                             </form>
                         </div>
                     </div>
