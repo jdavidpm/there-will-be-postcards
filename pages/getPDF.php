@@ -1,5 +1,12 @@
 <?php
 require_once('tcpdf/tcpdf.php');
+include("configDB.php");
+
+//get info from database
+$iduser = '1';
+$sqlAlumno ="SELECT * FROM user WHERE iduser = '$iduser'";
+$resAlumno = mysqli_query($conexion, $sqlAlumno);
+$infAlumno = mysqli_fetch_row($resAlumno);
 
 // create new PDF document
 $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
@@ -45,7 +52,7 @@ $pdf->AddPage();
 $txt = <<<EOD
 TCPDF Example 002
 
-Default page header and footer are disabled using setPrintHeader() and setPrintFooter() methods.
+$infAlumno[1]
 EOD;
 
 // print a block of text using Write()

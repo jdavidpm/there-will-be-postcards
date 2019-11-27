@@ -52,9 +52,13 @@
 			<div id="recentlyReceived"class="col s2 m2 l2 card-panel">
 				<h5 class="staat">Recently Received</h5>
 				<div class="divider"></div>
+				<span> <?php echo $infoAsReceiver[3]; ?></span>
+				<div class="divider"></div>
+				<button type="submit" class="btn bluec righteous waves-effect waves-ligh" formaction="uploadPostcard.php" id="buttonNewPost">New Postcard</button>
 				<h4 class="staat"></h4>
+				
 			</div>
-			<div class="col s1 m1 l1" ></div>
+			<div class="col s1 m1 l1"></div>
 			<div id="profileCard" class="col s6 m6 l6 card-panel" >
 				<h3 class="staat"><?php echo "$infoUser[1] $infoUser[2]";?></h3>
 				<img src=<?php echo "$profilePic";?> class="circle hoverable responsive-img" width="250px" style="margin: 5% 0% 5% 0%;">
@@ -71,6 +75,9 @@
 			<div id="recentlySent" class="col s2 m2 l2 card-panel">
 				<h5 class="staat">Recently Sent</h5>
 				<div class="divider"></div>
+				<span> <?php echo $infoAsSender[3]; ?></span>
+				<div class="divider"></div>
+				<button type="submit" class="btn bluec righteous waves-effect waves-ligh" formaction="showStatistics.php" id="showStats">Stats Postcards</button>
 				<h4 class="staat"></h4>
 			</div>
 		</div>
