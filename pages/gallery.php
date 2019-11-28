@@ -47,51 +47,8 @@
 	</header>
 
 	<main class="center-align">
-		<div id="switchFilter" class="row transparentish">
-			<div class="row">
-				<br>
-				<div class="col s6 l3 switch">
-					<label>
-						<h5>Christmas</h5>
-						<input type="checkbox">
-						<span class="lever"></span>
-					</label>
-				</div>
-				<div class="col s6 l3 switch">
-					<label>
-						<h5>Birthdays</h5>
-						<input type="checkbox">
-						<span class="lever"></span>
-					</label>
-				</div>
-				<div class="col s6 l3 switch">
-					<label>
-						<h5>Valentine's Day</h5>
-						<input type="checkbox">
-						<span class="lever"></span>
-					</label>
-				</div>
-				<div class="col s6 l3 switch">
-					<label>
-						<h5>Miscellaneous</h5>
-						<input type="checkbox">
-						<span class="lever"></span>
-					</label>
-				</div>
-			</div>
-			<div class="row center-align">
-				<div class="col s12 l12 switch">
-					<label>
-						<h5>All</h5>
-						<input type="checkbox">
-						<span class="lever"></span>
-					</label>
-				</div>
-			</div>
-		</div>
 		<div id="postcardItems" class="row">
 			<div id="rowItems" class="row">
-		
 			</div>
 		</div>
 	</main>

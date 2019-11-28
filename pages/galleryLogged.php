@@ -50,7 +50,7 @@
 	</header>
 
 	<main class="center-align">
-		<div id="switchFilter" class="row transparentish">
+		<!--<div id="switchFilter" class="row transparentish">
 			<div class="row">
 				<br>
 				<div class="col s6 l3 switch">
@@ -91,7 +91,7 @@
 					</label>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<div id="postcardItems" class="row">
 			<div id="rowItems" class="row">
 		
