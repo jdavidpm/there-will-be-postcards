@@ -21,6 +21,14 @@
     $emailSenderF = $infoSender[3];
 
     $emailReceiver = $_POST["email"];
+
+    $sql = "SELECT * FROM user WHERE email = '$emailReceiver'";
+    $res = mysqli_query($conexion, $sql);
+    $infoReceiver = mysqli_fetch_row($res);
+    if ($infoReceiver == null) { $idReceiver = 0;}
+    else {$idReceiver = $infoReceiver[0];}
+    echo $idReceiver;
+
     $mail = new PHPMailer(true);
     try
     {
@@ -56,6 +64,9 @@
     
         if($mail->send()){
             echo "Correo enviado correctamente. <a href='./alumno.php'>Regresar</a>";
+            $dateNow = date("Y-m-d");
+            $sql = "INSERT INTO received_sent VALUES ('$iduser', '$idReceiver', '$infoPostcard[0]', '$signSender', '$dateNow')";
+            $res = mysqli_query($conexion, $sql);
         }
     }
     catch (Exception $e)
