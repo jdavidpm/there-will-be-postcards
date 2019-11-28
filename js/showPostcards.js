@@ -24,7 +24,7 @@ $( document ).ready(function()
             {
                 for (j = 0; j < objAX.catPost[i].length; j++)
                 {
-                    $('#catPostcard' + i + '').prepend('<a href="#!" class="chip">'+ cateArray[objAX.catPost[i][j] - 1] + '</a>');
+                    $('#catPostcard' + i + '').prepend('<span class="chip">'+ cateArray[objAX.catPost[i][j] - 1] + '</span>');
                 }
             }
         },

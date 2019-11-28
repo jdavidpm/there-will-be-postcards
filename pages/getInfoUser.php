@@ -15,6 +15,10 @@
     $resinfoAsSender = mysqli_query($conexion, $sqlinfoAsSender);
     $infoAsSender = mysqli_fetch_row($resinfoAsSender);
 
+    $sqlinfoAsAdmi = "SELECT idmanager FROM administrator WHERE email = '$infoUser[3]'";
+    $resinfoAsAdmi = mysqli_query($conexion, $sqlinfoAsAdmi);
+    $infoAsAdmi = mysqli_fetch_row($resinfoAsAdmi);
+
     $profilePic = "./../images/pf/$iduser.jpg";
 
 ?>

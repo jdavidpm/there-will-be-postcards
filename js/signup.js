@@ -24,7 +24,7 @@ $(document).ready(function(){
                         type:tipoAlerts[objAX.val],
                         onDestroy:function(){
                             if(objAX.val == 1){
-                                window.location.replace("profile.php");
+                                window.location.replace("login.php");
                             }
                         }
                     });

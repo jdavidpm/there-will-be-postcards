@@ -49,7 +49,7 @@
     else
     {
         $queryAnalized["val"] = 0;
-        $queryAnalized["msj"] = "<h5 class='center-align josefin'>Email already in user.</h5>";
+        $queryAnalized["msj"] = "<h5 class='center-align josefin'>Email already in use.</h5>";
     }
     echo json_encode($queryAnalized);
 ?>

@@ -8,7 +8,7 @@
 	{
         header("location: login.php");
 	}
-	if (mysqli_num_rows($resinfoAsAdmi) == null)
+	if (mysqli_num_rows($resinfoAsAdmi) == 1)
 	{
 ?>
 <!DOCTYPE html>
@@ -60,7 +60,11 @@
 			<div id="recentlyReceived"class="col s2 m2 l2 card-panel">
 				<h5 class="staat">Recently Received</h5>
 				<div class="divider"></div>
+				<h5 class="staat">Recently Sent</h5>
+				<div class="divider"></div>
 				<span> <?php echo $infoAsReceiver[3]; ?></span>
+				<div class="divider"></div>
+				<button type="submit" class="btn bluec righteous waves-effect waves-ligh" formaction="uploadPostcard.php" id="buttonNewPost" alt="New Postcard">New Postcard</button>
 				<h4 class="staat"></h4>
 				
 			</div>
@@ -79,9 +83,9 @@
 			</div>
 			<div class="col s1 m1 l1" ></div>
 			<div id="recentlySent" class="col s2 m2 l2 card-panel">
-				<h5 class="staat">Recently Sent</h5>
+				<span> <?php echo $infoAsSender[3]; ?></span>
 				<div class="divider"></div>
-				<span> <?php echo mysqli_num_rows($resinfoAsAdmi); ?></span>
+				<button type="submit" class="btn bluec righteous waves-effect waves-ligh" formaction="showStatistics.php" id="showStats">Stats Postcards</button>
 				<h4 class="staat"></h4>
 			</div>
 		</div>
@@ -106,6 +110,6 @@
 	}
 	else
 	{
-        header("location: profileAdmi.php");
+        header("location: profile.php");
 	}
 ?>
