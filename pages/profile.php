@@ -23,7 +23,7 @@
 	<header>
 		<nav class="greyish" role="navigation">
 			<div class="nav-wrapper container">
-				<a id="logo-container" href="../index.html" class="brand-logo bluec-text pmarker">TWBP</a>
+				<a id="logo-container" href="../indexLogged.php" class="brand-logo bluec-text pmarker">TWBP</a>
 				<ul class="right hide-on-med-and-down">
 						<li>
 							<div class="col s12 righteous">      
@@ -40,7 +40,8 @@
 					  </ul>
 				<ul id="nav-mobile" class="sidenav greyish">
 					<li><a href="gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
-					<li><a href="logout.php?nombreSesion=iduser" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log Out</a></li>
+					<li><a href="profile.php" class="white-text righteous"><i class="material-icons left bluec-text">account_circle</i>Profile</a></li>
+					<li><a href="logout.php?nombreSesion=iduser" class="white-text righteous"><i class="material-icons left bluec-text">close</i>Log Out</a></li>
 				</ul>
 				<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="bluec-text material-icons">menu</i></a>
 			</div>
@@ -52,9 +53,11 @@
 			<div id="recentlyReceived"class="col s2 m2 l2 card-panel">
 				<h5 class="staat">Recently Received</h5>
 				<div class="divider"></div>
+				<h5 class="staat">Recently Sent</h5>
+				<div class="divider"></div>
 				<span> <?php echo $infoAsReceiver[3]; ?></span>
 				<div class="divider"></div>
-				<button type="submit" class="btn bluec righteous waves-effect waves-ligh" formaction="uploadPostcard.php" id="buttonNewPost">New Postcard</button>
+				<button type="submit" class="btn bluec righteous waves-effect waves-ligh" formaction="uploadPostcard.php" id="buttonNewPost" alt="New Postcard">New Postcard</button>
 				<h4 class="staat"></h4>
 				
 			</div>
@@ -73,8 +76,6 @@
 			</div>
 			<div class="col s1 m1 l1" ></div>
 			<div id="recentlySent" class="col s2 m2 l2 card-panel">
-				<h5 class="staat">Recently Sent</h5>
-				<div class="divider"></div>
 				<span> <?php echo $infoAsSender[3]; ?></span>
 				<div class="divider"></div>
 				<button type="submit" class="btn bluec righteous waves-effect waves-ligh" formaction="showStatistics.php" id="showStats">Stats Postcards</button>

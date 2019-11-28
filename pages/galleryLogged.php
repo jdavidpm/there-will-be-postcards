@@ -1,7 +1,8 @@
 <?php
 	session_start();
-	if(!isset($_SESSION["iduser"]))
+	if(isset($_SESSION["iduser"]))
 	{
+       	 include("getInfoUser.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,12 +35,14 @@
 							</div>
 						</li>
 						<li><a href="gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
-						<li><a href="login.php" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log In</a></li>
+						<li><a href="profile.php" class="white-text righteous"><i class="material-icons left bluec-text">account_circle</i>Profile</a></li>
+						<li><a href="logout.php?nombreSesion=iduser" class="white-text righteous"><i class="material-icons left bluec-text">close</i>Log Out</a></li>
 					  </ul>
 				  
 				<ul id="nav-mobile" class="sidenav greyish">
 					<li><a href="gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
-					<li><a href="login.php" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log In</a></li>
+					<li><a href="profile.php" class="white-text righteous"><i class="material-icons left bluec-text">account_circle</i>Profile</a></li>
+					<li><a href="logout.php?nombreSesion=iduser" class="white-text righteous"><i class="material-icons left bluec-text">close</i>Log Out</a></li>
 				</ul>
 				<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="bluec-text material-icons">menu</i></a>
 			</div>
@@ -116,6 +119,6 @@
 	}
 	else
 	{
-        header("location: galleryLogged.php");
+        header("location: gallery.php");
 	}
 ?>

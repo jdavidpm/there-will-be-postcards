@@ -24,7 +24,7 @@
 	<header>
 		<nav class="greyish" role="navigation">
 			<div class="nav-wrapper container">
-				<a id="logo-container" href="../index.html" class="brand-logo bluec-text pmarker">TWBP</a>
+				<a id="logo-container" href="../index.php" class="brand-logo bluec-text pmarker">TWBP</a>
 				<ul class="right hide-on-med-and-down">
 						<li>
                             <div class="col s12 righteous">      
@@ -42,7 +42,8 @@
 				  
 				<ul id="nav-mobile" class="sidenav greyish">
 					<li><a href="gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
-					<li><a href="gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log In</a></li>
+					<li><a href="profile.php" class="white-text righteous"><i class="material-icons left bluec-text">account_circle</i>Profile</a></li>
+                    <li><a href="logout.php?nombreSesion=iduser" class="white-text righteous"><i class="material-icons left bluec-text">close</i>Log Out</a></li>
 				</ul>
 				<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="bluec-text material-icons">menu</i></a>
 			</div>
