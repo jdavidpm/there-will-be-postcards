@@ -59,10 +59,11 @@
 		<div id ="panelProfile" class="row" style="margin: 5% 5% 5% 5%;">
 			<div id="recentlyReceived"class="col s2 m2 l2 card-panel">
 				<h5 class="staat">Recently Received</h5>
+				<span> <?php echo mysqli_num_rows($resinfoAsReceiver); ?></span>
 				<div class="divider"></div>
 				<h5 class="staat">Recently Sent</h5>
 				<div class="divider"></div>
-				<span> <?php echo $infoAsReceiver[3]; ?></span>
+				<span> <?php echo mysqli_num_rows($resinfoAsSender); ?></span>
 				<h4 class="staat"></h4>
 				
 			</div>

@@ -7,13 +7,13 @@
     $resinfoUser = mysqli_query($conexion, $sqlinfoUser);
     $infoUser = mysqli_fetch_row($resinfoUser);
 
-   // $sqlinfoAsReceiver = "SELECT * FROM received WHERE idreceiver = '$iduser'";
-    //$resinfoAsReceiver = mysqli_query($conexion, $sqlinfoAsReceiver);
-    //$infoAsReceiver = mysqli_fetch_row($resinfoAsReceiver);
-
-    $sqlinfoAsSender = "SELECT * FROM sent WHERE idsender = '$iduser'";
+    $sqlinfoAsSender = "SELECT * FROM received_sent WHERE idsender = '$iduser'";
     $resinfoAsSender = mysqli_query($conexion, $sqlinfoAsSender);
     $infoAsSender = mysqli_fetch_row($resinfoAsSender);
+
+    $sqlinfoAsReceiver = "SELECT * FROM received_sent WHERE idreceiver = '$iduser'";
+    $resinfoAsReceiver = mysqli_query($conexion, $sqlinfoAsReceiver);
+    $infoAsReceiver = mysqli_fetch_row($resinfoAsReceiver);
 
     $sqlinfoAsAdmi = "SELECT idmanager FROM administrator WHERE email = '$infoUser[3]'";
     $resinfoAsAdmi = mysqli_query($conexion, $sqlinfoAsAdmi);

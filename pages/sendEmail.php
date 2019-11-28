@@ -65,7 +65,7 @@
         if($mail->send()){
             echo "Correo enviado correctamente. <a href='./alumno.php'>Regresar</a>";
             $dateNow = date("Y-m-d");
-            $sql = "INSERT INTO received_sent VALUES ('$iduser', '$idReceiver', '$infoPostcard[0]', '$signSender', '$dateNow')";
+            $sql = "INSERT INTO received_sent VALUES ('$idReceiver', '$iduser', '$infoPostcard[0]', '$signSender', '$dateNow')";
             $res = mysqli_query($conexion, $sql);
         }
     }
