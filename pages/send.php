@@ -69,7 +69,7 @@
                                 <label for="sign">Sign it!</label>
                             </div>
                             <input class="btn bluec righteous" type="submit" value="SEND">
-                            <button type="submit" class="btn bluec righteous waves-effect waves-ligh" formaction="getPDF.php"> Download</button>
+                            <button type="submit" class="btn bluec righteous waves-effect waves-ligh" formaction=<?php echo "getPDF.php?postToSend=".$_REQUEST["postToSend"];?>> Download</button>
                             </form>
                         </div>
                     </div>

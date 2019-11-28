@@ -137,7 +137,6 @@
     <script src="../fontawesome/js/all.min.js"></script>
     <script src="../js/validetta/dist/validetta.min.js"></script>
     <script src="../js/confirm/dist/jquery-confirm.min.js"></script>
-    <script type="text/javascript">$(document).ready(function(){$("#dataEmail").validetta({});});</script>
   </body>
 </html>
 <?php

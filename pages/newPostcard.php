@@ -4,27 +4,46 @@
 
     $queryAnalized = array(); //respAX use in professor's example
 
-    if(mysqli_num_rows($resultSelect) == null)
-    {
-        //Insert new user
-        $insertSQLQuery = "INSERT INTO postcard (sent, namepost) VALUES('0','$lastName','$email','$password','$gender','$birthdate')";
+
+        $insertSQLQuery = "INSERT INTO postcard (sent, namepost) VALUES('0','$postcardName')";
         $resultInsert = mysqli_query($conexion, $insertSQLQuery);
         $affectedRowsInsert = mysqli_affected_rows($conexion);
 
-        //Fetch id from new user (so we name his/her profile picture)
-        $selectSQLQuery = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
+        $selectSQLQuery = "SELECT * FROM postcard WHERE namepost = '$postcardName'";
         $resultSelect = mysqli_query($conexion, $selectSQLQuery);
         $rowFetchedSelect = mysqli_fetch_row($resultSelect);
-        $idUser = $rowFetchedSelect[0];
+        $idPost = $rowFetchedSelect[0];
+
+        if ($category1 != 0)
+        {
+            $selectSQLQuery = "INSERT INTO postcard_category VALUES ($idPost, $category1)";
+            $resultSelect = mysqli_query($conexion, $selectSQLQuery);
+        }
+        if ($category2 != 0)
+        {
+            $selectSQLQuery = "INSERT INTO postcard_category VALUES ($idPost, $category2)";
+            $resultSelect = mysqli_query($conexion, $selectSQLQuery);
+        }
+        if ($category3 != 0)
+        {
+            $selectSQLQuery = "INSERT INTO postcard_category VALUES ($idPost, $category3)";
+            $resultSelect = mysqli_query($conexion, $selectSQLQuery);
+        }
+        if ($category4 != 0)
+        {
+            $selectSQLQuery = "INSERT INTO postcard_category VALUES ($idPost, $category4)";
+            $resultSelect = mysqli_query($conexion, $selectSQLQuery);
+        }
+
 
         if($affectedRowsInsert == 1)
         {
             $queryAnalized["val"] = 1;
-            $queryAnalized["msj"] = "<h5 class='center-align josefin'>Succesful registration!</h5>";
-            $dirFoto = "./../images/pf/";
+            $queryAnalized["msj"] = "<h5 class='center-align josefin'>Upload Succesful!</h5>";
+            $dirFoto = "./../postcards/p";
             $archFoto = $dirFoto.basename($_FILES["foto"]["name"]);
             $extFoto = pathinfo($_FILES["foto"]["name"],PATHINFO_EXTENSION);
-            $destFoto = $dirFoto.$idUser.".".$extFoto;
+            $destFoto = $dirFoto.$idPost.".".$extFoto;
             if(move_uploaded_file($_FILES["foto"]["tmp_name"], $destFoto))
             {
                 $queryAnalized["msj"] .= "<h5 class='center-align josefin'>Picture saved</h5>";
@@ -39,11 +58,5 @@
             $queryAnalized["val"] = 0;
             $queryAnalized["msj"] = "<h5 class='center-align josefin'>Try again later.</h5>";
         }
-    }
-    else
-    {
-        $queryAnalized["val"] = 0;
-        $queryAnalized["msj"] = "<h5 class='center-align josefin'>Email already in use.</h5>";
-    }
     echo json_encode($queryAnalized);
 ?>

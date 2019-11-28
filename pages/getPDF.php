@@ -3,10 +3,13 @@ require_once('tcpdf/tcpdf.php');
 include("configDB.php");
 
 //get info from database
-$iduser = '1';
+session_start();
+$iduser = $_SESSION["iduser"];
 $sqlAlumno ="SELECT * FROM user WHERE iduser = '$iduser'";
 $resAlumno = mysqli_query($conexion, $sqlAlumno);
 $infAlumno = mysqli_fetch_row($resAlumno);
+
+$tmp = $_REQUEST["postToSend"];
 
 // create new PDF document
 $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
@@ -50,8 +53,8 @@ $pdf->AddPage();
 
 // set some text to print
 $txt = <<<EOD
-TCPDF Example 002
-
+POSTCARD from TWBP!
+<img scr="../postcards/p1.jpg">
 $infAlumno[1]
 EOD;
 
@@ -61,7 +64,7 @@ $pdf->writeHTMLCell(0, 0, '', '', $txt, 0, 1, 0, true, '', true);
 // ---------------------------------------------------------
 
 //Close and output PDF document
-$pdf->Output('example_002.pdf', 'I');
+$pdf->Output('postcard.pdf', 'I');
 
 //============================================================+
 // END OF FILE
