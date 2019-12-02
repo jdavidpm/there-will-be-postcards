@@ -26,7 +26,7 @@
 			<a id="logo-container" href="indexLogged.php" class="brand-logo bluec-text pmarker" style="padding-left: 25mm">TWBP</a>
 			<div class="nav-wrapper container">
 				<ul class="right hide-on-med-and-down">
-					<li>
+					<!--<li>
 						<div class="col s12 righteous">      
 							<div class="input-field col s12">
 								<i class="material-icons prefix">search</i>
@@ -34,14 +34,14 @@
 								<label for="autocomplete-input" >Search</label>
 							</div>
 						</div>
-					</li>
+					</li>-->
 					<li><a href="pages/gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
 					<li><a href="pages/profile.php" class="white-text righteous"><i class="material-icons left bluec-text">account_circle</i>Profile</a></li>
 					<li><a href="pages/logout.php?nombreSesion=iduser" class="white-text righteous"><i class="material-icons left bluec-text">close</i>Log Out</a></li>
 				</ul>
 				  
 				<ul id="nav-mobile" class="sidenav greyish">
-					<li><a href="#" class="white-text righteous"><i class="material-icons left bluec-text">search</i>Search</a></li>
+					<!--<li><a href="#" class="white-text righteous"><i class="material-icons left bluec-text">search</i>Search</a></li>-->
 					<li><a href="pages/gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
 					<li><a href="pages/profile.php" class="white-text righteous"><i class="material-icons left bluec-text">account_circle</i>Profile</a></li>
 					<li><a href="pages/logout.php?nombreSesion=iduser" class="white-text righteous"><i class="material-icons left bluec-text">close</i>Log Out</a></li>

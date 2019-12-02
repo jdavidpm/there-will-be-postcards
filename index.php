@@ -25,7 +25,7 @@
 			<a id="logo-container" href="index.php" class="brand-logo bluec-text pmarker" style="padding-left: 25mm">TWBP</a>
 			<div class="nav-wrapper container">
 				<ul class="right hide-on-med-and-down">
-					<li>
+					<!--<li>
 						<div class="col s12 righteous">      
 							<div class="input-field col s12">
 								<i class="material-icons prefix">search</i>
@@ -33,7 +33,7 @@
 								<label for="autocomplete-input" >Search</label>
 							</div>
 						</div>
-					</li>
+					</li>-->
 					<li><a href="pages/gallery.php" class="white-text righteous"><i class="material-icons left bluec-text">view_module</i>Gallery</a></li>
 					<li><a href="pages/login.php" class="white-text righteous"><i class="material-icons left bluec-text">forward</i>Log In</a></li>
 				</ul>
