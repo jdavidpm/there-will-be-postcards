@@ -16,10 +16,10 @@ $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8',
 
 // set document information
 $pdf->SetCreator(PDF_CREATOR);
-$pdf->SetAuthor('Nicola Asuni');
+$pdf->SetAuthor('David Portilla');
 $pdf->SetTitle('There Will Be Postcards!');
-$pdf->SetSubject('TCPDF Tutorial');
-$pdf->SetKeywords('TCPDF, PDF, example, test, guide');
+$pdf->SetSubject('Postcard');
+$pdf->SetKeywords('postcard, PDF, twbp, test, guide');
 
 // remove default header/footer
 $pdf->setPrintHeader(false);
@@ -51,15 +51,24 @@ $pdf->SetFont('times', 'BI', 20);
 // add a page
 $pdf->AddPage();
 
+$emailReceiver = $_POST["email"];
+$signSender = $_POST["sign"];
+$dateNow = date("Y-m-d");
 // set some text to print
-$txt = <<<EOD
-POSTCARD from TWBP!
-<img scr="../postcards/p1.jpg">
-$infAlumno[1]
+$html = <<<EOD
+<h1 style="text-align: center; color: #3A81EB;">POSTCARD from TWBP!</h1>
+<img src="../postcards/p$tmp.jpg">
+<hr>
+<p>
+    <h4 style="text-align: left; color: #3A81EB;">From: <span style="color: #000000;">$infAlumno[1] $infAlumno[2]</span></h4>
+    <h4 style="text-align: left; color: #3A81EB;">To: <span style="color: #000000;">$emailReceiver</span></h4>
+    <h4 style="text-align: left; color: #3A81EB;">Sign: <span style="color: #000000;">$signSender</span></h4>
+    <h4 style="text-align: left; color: #3A81EB;">Date: <span style="color: #000000;">$dateNow</span></h4>
+</p>
 EOD;
 
-// print a block of text using Write()
-$pdf->writeHTMLCell(0, 0, '', '', $txt, 0, 1, 0, true, '', true);
+// output the HTML content
+$pdf->writeHTML($html, true, false, true, false, '');
 
 // ---------------------------------------------------------
 
